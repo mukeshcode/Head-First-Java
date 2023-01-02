@@ -8,10 +8,11 @@ Current java version - 19
 3. Memory management
 4. Promise of portability(Write once run anywhere)
 
-**How Java Works**
+_How Java Works_
 
 Java Source Code ----COMPILATION---> Platform Independent Bytecode ---Java Virtual machine---> Final output
 
 Every machine capable of running Java files can interpret Bytecode to something which it can run.
 
-_Running a program means telling JVM to load the class and then execute the complete main method._
+_Running a program means telling JVM to load the class and then execute the complete main method_
+
