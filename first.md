@@ -16,3 +16,5 @@ Every machine capable of running Java files can interpret Bytecode to something 
 
 _Running a program means telling JVM to load the class and then execute the complete main method_
 
+*Checking the working*
+
