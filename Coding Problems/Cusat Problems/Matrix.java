@@ -62,5 +62,24 @@ public class Matrix{
 			System.out.println("Addition not possible!");
 		}
 
+		System.out.println("Try for matrix multiplication");
+		if(col1 == row2){
+			int row3 = row1, col3 = col2;
+			for(int i = 0; i<row3; i++){
+				for(int j = 0; j<col3; j++){
+					//'i' is my row no. in the first matrix
+					//'j' is my col no. in the second matrix
+					//'k' will iterate
+					int sum = 0;
+					for(int k = 0; k < col1; k++)
+						sum += mat1[i][k] * mat2[k][j];
+					System.out.print(sum + "\t");
+				}
+				System.out.println();
+			}
+		}
+		else
+			System.out.println("Matrix multiplication not possible");
+
 	}
 }
