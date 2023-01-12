@@ -4,7 +4,7 @@ public class Try{
 		
  		Num n2 = n1;
 
-		n1.setNum(75);
+		n1.setNum(750);
 
 		n1 = new Num();
 		n1.setNum(50);
