@@ -1,36 +1,34 @@
-public class DotComTestDrive{
+class SimpleDotComTestDrive{
 	public static void main(String[] args){
-		DotCom dot = new DotCom();
-		int[] locations = {2, 3, 4};
-		dot.setLocations(locations);
-		
-		String guess = "2";
-		dot.makeGuess(guess);
+		SimpleDotCom dot = new SimpleDotCom();
+		int [] locations = {2, 3, 4};
+		dot.setLocationCells(locations);
+		String userGuess = "2";
+		String result = dot.checkYourself(userGuess);
 	}
 }
 
-class DotCom{
-	private int[] locationCells;
-	private int numberHits = 0;
+class SimpleDotCom{
+	private int [] locationCells;
+	private int numOfHits = 0;
 
-	
-	public void setLocations(int[] locations){
-		this.locationCells = locations;
+	public void setLocationCells(int [] locs){
+		this.locationCells = locs;
 	}
 
-	public void makeGuess(String guess){
-		int myGuess = Integer.parseInt(guess);
-		String result = "Miss";
-		for(int cells : this.locationCells){
-			if(cells == myGuess){
-				numberHits++;
-				result = "Hit";
-				break;
-			}
+	public String checkYourself(String stringGuess){
+	int guess = Integer.parseInt(stringGuess);
+	String result = "miss";
+	for(int cell : locationCells){
+		if(guess == cell){
+			result = "hit";
+			numOfHits++;
+			break;
 		}
-		if(numberHits == this.locationsCells.length)
-			result = "Kill";
-
-		System.out.println(result);
+	}
+	if(numOfHits == locationCells.length)
+		result = "kill";
+	System.out.println(result);
+	return result;
 	}
 }
