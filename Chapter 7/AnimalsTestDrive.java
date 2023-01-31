@@ -28,44 +28,41 @@ class Animal{
 }
 
 class Dog extends Animal{
-	String name;
-	String sound;
-	String food;
-
-	void Dog(){
+	Dog(){
 		this.name = "Dog";
 		this.sound = "Bark";
 		this.food = "Porridge";
 	}
-	void makeSound(){
-		System.out.println("I am " + this.name + "..." + this.sound + " .. "+ this.sound);
-	}
-	void eat(){
-		System.out.println("I'm " + this.name + "... Give me my " + this.food + "!");
-	}
-
 }
 
 class Cat extends Animal{
-	String name = "Cat";
-	String sound = "Meow";
-	String food = "Jerry";
+	Cat(){
+		this.name = "Cat";
+		this.sound = "Meow";
+		this.food = "Jerry";
+	}
 }
 
 class Lion extends Animal{
-	String name = "Lion";
-	String sound = "Grrrrrrrr....";
-	String food = "humans";
+	Lion(){
+		this.name = "Lion";
+		this.sound = "Grrrr..";
+		this.food = "Deer";
+	}
 }
 
 class Deer extends Animal{
-	String name = "Deer";
-	String sound = "Grunt..";
-	String food = "grass";
+	Deer(){
+		this.name = "Deer";
+		this.sound = "Grunt";
+		this.food = "Grass";
+	}
 }
 
 class Wolf extends Animal{
-	String name = "Wolf";
-	String sound = "Wooo..";
-	String food = "deeeeer";
+	Wolf(){
+		this.name = "Wolf";
+		this.sound = "Wohooo.";
+		this.food = "Innocent Animals";
+	}
 }
