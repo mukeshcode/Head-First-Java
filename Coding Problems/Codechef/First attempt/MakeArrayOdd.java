@@ -22,7 +22,7 @@ class MakeArrayOdd
 		    for(int i = 0; i<n; i++)
 		        if(A[i]%2 == 0) evenCnt++;
 		        
-		    if(x%2 == 1){
+		    if(x%2 == 1){	// give it even no.
 		        if(evenCnt%2 == 0)
 		            System.out.println(evenCnt/2);
 		        else
