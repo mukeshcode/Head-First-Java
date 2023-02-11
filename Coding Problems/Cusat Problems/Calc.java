@@ -34,7 +34,7 @@ class Calc{
 			case END : System.out.println(" END "); break;
 			case POW : System.out.println(" POW "); break;
 		}
-		mynput.close();
+		//mynput.close();
 	//  j = mynput.nextInt();
 	}
 
