@@ -1,7 +1,6 @@
-import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.*;
 
-public class QueueTest{
+class QueueTest{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		Queue q = new Queue();
